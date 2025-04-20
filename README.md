@@ -4,6 +4,11 @@
 Proyek ini adalah implementasi sistem klasifikasi gambar menggunakan dataset Fashion MNIST. Dataset ini terdiri dari 10 kategori pakaian, seperti T-shirt/top, Trouser, Pullover, Dress, dan lainnya. Model yang digunakan adalah Convolutional Neural Network (CNN) dengan TensorFlow dan Keras. Proyek ini juga mendemonstrasikan konversi model ke beberapa format untuk keperluan deployment: SavedModel, TensorFlow.js, dan TensorFlow Lite.
 
 ## Fitur Utama
+1. ****Muat dan Siapkan Dataset Fashion MNIST**
+   - Muat dataset fashion MNIST
+   - Pemisahan data validasi
+   - Normalisasi data
+
 1. **Pemrosesan Data**:
    - Normalisasi dataset Fashion MNIST agar nilai piksel berada dalam rentang [0, 1].
    - Transformasi data untuk kompatibilitas dengan CNN (dimensi 28x28x1).
