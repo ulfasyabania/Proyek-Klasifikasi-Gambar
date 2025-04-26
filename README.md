@@ -9,7 +9,7 @@ Proyek ini bertujuan untuk melakukan klasifikasi gambar pada dataset CIFAR-10 me
 - Evaluasi dan visualisasi hasil
 - Penyimpanan model dalam format SavedModel, TF-Lite, dan TensorFlow.js
 
-## Import dan Setup
+## **Import dan Setup**
 
 1. **Import Library dan Modul**: Memuat library dan modul yang akan digunakan dalam proses pengolahan data dan pelatihan model. Dalam hal ini, library seperti `tensorflow`, `numpy`, `matplotlib`, dan `cv2` (OpenCV) diimpor untuk berbagai keperluan.
    
@@ -41,7 +41,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCh
    - Nilai piksel setiap gambar dikonversi dari rentang [0,255] ke [0,1] dengan membaginya dengan 255.0. 
    - Tujuannya adalah mempercepat proses pelatihan model dan menghindari masalah numerik yang dapat muncul dari nilai piksel besar.
 
-## **"Pembagian Data dan Pra-pemrosesan Label"**
+## **Pembagian Data dan Pra-pemrosesan Label**
 
 1. **Pembagian Data**:
    - Menggunakan `train_test_split` untuk membagi 20% data pelatihan ke dalam set validasi. Ini penting untuk mengevaluasi performa model secara obyektif selama pelatihan.
@@ -193,7 +193,6 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCh
 **Manfaat Tahapan Ini**:
 - Callback meningkatkan efisiensi pelatihan dengan mengoptimalkan learning rate dan mencegah overfitting.
 - Evaluasi memastikan bahwa model dapat menghasilkan prediksi yang baik tidak hanya pada data pelatihan, tetapi juga pada data pengujian.
-
 
 ## **Hasil Latih Model**
 Log ini memberikan gambaran tentang progres pelatihan model selama 25 epoch:
